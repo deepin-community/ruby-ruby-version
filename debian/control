@@ -1,0 +1,26 @@
+Source: ruby-ruby-version
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 9~),
+               gem2deb,
+               rake,
+               ruby-rspec
+Standards-Version: 3.9.8
+Vcs-Git: https://anonscm.debian.org/git/pkg-ruby-extras/ruby-ruby-version.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-ruby-extras/ruby-ruby-version.git
+Homepage: https://github.com/janlelis/ruby_version
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+
+Package: ruby-ruby-version
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ruby | ruby-interpreter,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: Provide the RubyVersion pseudo-constant
+ Simplified checking the currently running Ruby version
+ in your programs by providing the RubyVersion pseudo-constant.
+ .
+ Use this if you think DRY is important.

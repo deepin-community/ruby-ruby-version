@@ -1,0 +1,18 @@
+ruby-ruby-version (1.0.1-2) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Cédric Boutillier ]
+  * Use https:// in Vcs-* fields
+
+  [ Christian Hofstaedtler ]
+  * Remove myself from Uploaders
+  * Bump Standards-Version to 3.9.8
+
+ -- Cédric Boutillier <boutil@moszumanska.debian.org>  Wed, 30 Nov 2016 18:03:58 +0000
+
+ruby-ruby-version (1.0.1-1) unstable; urgency=medium
+
+  * Initial release, as a dependency for ruby-rspec-pending-for.
+
+ -- Christian Hofstaedtler <zeha@debian.org>  Wed, 02 Mar 2016 15:44:15 +0100
